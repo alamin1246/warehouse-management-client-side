@@ -32,8 +32,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3 className='text-dark fs-1'>Good Quality Foods</h3>
-                        <p className='text-info fs-1'>I provides Good Home Food Catering Service. This Food is Testy and also Quality Foods.</p>
+                        <h3 className='text-dark fs-1'>Kids Toy Stock Management</h3>
+                        <p className='text-info fs-1'>Welcome to Kids Toy Stock Management.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -44,8 +44,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3 className='text-dark fs-1'>Good Quality Foods</h3>
-                        <p className='text-info fs-1'>I provides Good Home Food Catering Service. This Food is Testy and also Quality Foods.</p>
+                        <h3 className='text-dark fs-1'>Kids Toy Stock Management</h3>
+                        <p className='text-info fs-1'>Welcome to Kids Toy Stock Management.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

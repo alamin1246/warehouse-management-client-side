@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-const ServiceDetail = () => {
+const ProductDetail = () => {
     const { serviceId } = useParams();
     return (
         <div>
@@ -16,4 +16,4 @@ const ServiceDetail = () => {
     );
 };
 
-export default ServiceDetail;
+export default ProductDetail;

@@ -4,7 +4,7 @@ import './Footer.css';
 import { FaAccusoft, FaEnvelope, FaMobileAlt } from "react-icons/fa";
 const Footer = () => {
     return (
-        <div className="bg-primary container-fluid pt-5">
+        <div className="bg-primary container-fluid pt-5 mt-5">
             <div className="container ">
                 <div className="row justify-content-around">
                     <div className="col-md-4">

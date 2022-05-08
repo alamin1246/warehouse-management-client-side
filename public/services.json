@@ -1,44 +1,62 @@
 [
     {
         "id": 1,
-        "name": "Real Bengal Tiger Photography",
+        "name": "Motorcycle Kids Toys",
+        "img": "https://m.media-amazon.com/images/I/91vGjpyKOKS._SX355_.jpg",
+        "description": "FunBlast 12 Pcs Plastic Mini Motor Bike Toy Play Set for 3+ Years Old Boys,Girls,Kids",
         "price": "500",
-        "description": "Nostalgic Photo Shot",
-        "img": "https://i.ytimg.com/vi/OAY54HqbGwo/maxresdefault.jpg"
+        "quantity": 150,
+        "supplier_name":"Abdul Karim",
+        "sold":40      
     },
     {
         "id": 2,
-        "name": "Dog Photography",
-        "price": "400",
-        "description": "Awesome Photo Shot",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREnWlqa5cAcLCPNm1_Hoy5GtlcY2Jy4n0eT4BbCUwqKD-0UYQgdkdBLZHgiPSZueIVA58&usqp=CAU"
+        "name": "Stunt Kids Toys",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGue135jR8RZeMlF6RCAOPhy3XXp1S18QkXQ&usqp=CAU",
+        "description": "Branded Toys and very nice",
+        "price": "550",
+        "quantity": 150,
+        "supplier_name":"Hanif Ahmed",
+        "sold":65 
     },
     {
         "id": 3,
-        "name": "Cat Photography",
-        "price": "300",
-        "description": "Very Nice Shot",
-        "img": "https://thumbs.dreamstime.com/b/professional-animal-photographer-taking-picture-beautiful-pomeranian-spitz-dog-home-professional-animal-photographer-taking-169956880.jpg"
+        "name": "Frozen Kids Toys",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ynVgSvehaZdEHLT1gwnVBpWiO8EmXabnyw&usqp=CAU",
+        "description": "Kitchen and Beauty Toy Play Set for your kids.",
+        "price": "500",
+        "quantity": 100,
+        "supplier_name":"Baten Khandokar",
+        "sold":30 
     },
     {
         "id": 4,
-        "name": "Cat Photography",
-        "price": "300",
-        "description": "Very Nice Shot",
-        "img": "https://thumbs.dreamstime.com/b/professional-animal-photographer-taking-picture-beautiful-pomeranian-spitz-dog-home-professional-animal-photographer-taking-169956880.jpg"
+        "name": "Chess Kids Toys",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4wCw5U2VdY_Tmhiz9POVj5TMdT0Zf3jyC5w&usqp=CAU",
+        "description": "Memory Development Color Chess Family Engagement Game",
+        "price": "750",
+        "quantity": 100,
+        "supplier_name":"Abdullah Al Mamun",
+        "sold":50 
     },
     {
         "id": 5,
-        "name": "Cat Photography",
-        "price": "300",
-        "description": "Very Nice Shot",
-        "img": "https://thumbs.dreamstime.com/b/professional-animal-photographer-taking-picture-beautiful-pomeranian-spitz-dog-home-professional-animal-photographer-taking-169956880.jpg"
+        "name": "Train Kids Toys",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESsqZTU5ifSmr4tPUjJCZy-CV1YsvL4QNWA&usqp=CAU",
+        "description": "LEGO City Passenger Train 60197 Building Kit (677 Pieces), Overbox",
+        "price": "700",
+        "quantity": 200,
+        "supplier_name":"Aktaruzzaman Pramanik",
+        "sold":120
     },
     {
         "id": 6,
-        "name": "Cat Photography",
-        "price": "300",
-        "description": "Very Nice Shot",
-        "img": "https://thumbs.dreamstime.com/b/professional-animal-photographer-taking-picture-beautiful-pomeranian-spitz-dog-home-professional-animal-photographer-taking-169956880.jpg"
+        "name": "Puzzle Kids Toys",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkO0JeAUsai0L3c9UxgmUC-Wv8FbC04m0zw&usqp=CAU",
+        "description": "Ravensburger Ben & Holly-4 in Box (12, 16, 20, 24 Pieces) Jigsaw Puzzles for Kids Age 3 Years Up",
+        "price": "600",
+        "quantity": 120,
+        "supplier_name":"Rahamat Ullah",
+        "sold":60 
     }
 ]

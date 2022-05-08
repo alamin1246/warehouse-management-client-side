@@ -9,9 +9,7 @@ import auth from '../../../firebase.init';
 const Header = () => {
     const [user] = useAuthState(auth);
 
-    const handleSignOut = () => {
-        signOut(auth);
-    }
+
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
@@ -32,14 +30,16 @@ const Header = () => {
                             <Nav.Link as={Link} to="manage-inventory">Manage Inventories</Nav.Link>
                             <Nav.Link as={Link} to="add-item">Add Item</Nav.Link>
                             <Nav.Link as={Link} to="my-items">My Items</Nav.Link>
-                            <Nav.Link as={Link} to="services" href="home#services">Services</Nav.Link>
+                           <div>
+                           <span className="navbar-text">
+                                {
+                                    user ? <span>{user.displayName}<button className='btn btn-link text-info' onClick={() => signOut(auth)}>Sign Out</button></span> : <Nav.Link as={Link} to="login">
+                                        Login
+                                    </Nav.Link>
+                                }
+                            </span>
+                           </div>
 
-                            {user ?
-                                <button className='btn tn-link text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>
-                                :
-                                <Nav.Link as={Link} to="login">
-                                    Login
-                                </Nav.Link>}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
