@@ -4,23 +4,22 @@ import './Products.css';
 
 const Products = () => {
 
-    const [services, setServices] = useState([]);
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('services.json')
+        fetch('http://localhost:5000/product')
             .then(res => res.json())
-            .then(data => setServices(data));
+            .then(data => setProducts(data));
     }, [])
     return (
-        <div id='services' className='container'>
-            {/* <h2>Services: {services.length}</h2> */}
+        <div id='products' className='container'>
             <div className="row">
                 <h1 className='text-success text-center mt-5'>Our Kids Toys Products</h1>
                 <div className='products-container'>
                     {
-                        services.map(service => <Product
-                            key={service.id}
-                            service={service}
+                        products.map(product => <Product
+                            key={product.id}
+                            product={product}
                         >
                         </Product>)
                     }
