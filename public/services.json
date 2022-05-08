@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Real Bengal Tiger Photography",
+        "price": "500",
+        "description": "Nostalgic Photo Shot",
+        "img": "https://i.ytimg.com/vi/OAY54HqbGwo/maxresdefault.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Dog Photography",
+        "price": "400",
+        "description": "Awesome Photo Shot",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREnWlqa5cAcLCPNm1_Hoy5GtlcY2Jy4n0eT4BbCUwqKD-0UYQgdkdBLZHgiPSZueIVA58&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "name": "Cat Photography",
+        "price": "300",
+        "description": "Very Nice Shot",
+        "img": "https://thumbs.dreamstime.com/b/professional-animal-photographer-taking-picture-beautiful-pomeranian-spitz-dog-home-professional-animal-photographer-taking-169956880.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cat Photography",
+        "price": "300",
+        "description": "Very Nice Shot",
+        "img": "https://thumbs.dreamstime.com/b/professional-animal-photographer-taking-picture-beautiful-pomeranian-spitz-dog-home-professional-animal-photographer-taking-169956880.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Cat Photography",
+        "price": "300",
+        "description": "Very Nice Shot",
+        "img": "https://thumbs.dreamstime.com/b/professional-animal-photographer-taking-picture-beautiful-pomeranian-spitz-dog-home-professional-animal-photographer-taking-169956880.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cat Photography",
+        "price": "300",
+        "description": "Very Nice Shot",
+        "img": "https://thumbs.dreamstime.com/b/professional-animal-photographer-taking-picture-beautiful-pomeranian-spitz-dog-home-professional-animal-photographer-taking-169956880.jpg"
+    }
+]
