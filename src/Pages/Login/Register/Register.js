@@ -44,7 +44,7 @@ const Register = () => {
     return (
         <div >
             <div className='register-form'>
-                <h2 style={{ textAlign: 'center' }} className='text-success'>Please Registration</h2>
+                <h2 style={{ textAlign: 'center' }} className='text-primary'>Please Sign Up</h2>
                 <form onSubmit={handleRegister}>
                     <input type="text" name="name" id="" placeholder='Enter Your Name' />
 
@@ -54,10 +54,10 @@ const Register = () => {
 
                     <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
 
-                    <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Al Amin's Home Food Catering Service Terms and Conditions</label>
+                    <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept the Terms and Conditions</label>
                     <input
                         disabled={!agree}
-                        className='w-50 mx-auto btn btn-success mt-2'
+                        className='w-50 mx-auto btn btn-primary mt-2'
                         type="submit"
                         value="Register" />
                 </form>
