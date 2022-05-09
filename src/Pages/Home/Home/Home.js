@@ -2,6 +2,7 @@ import React from 'react';
 import { CustomHook } from '../../CustomHook/CustomHook';
 import Banner from '../Banner/Banner';
 import Product from '../Product/Product';
+import Map from './Map/Map';
 import './Home.css';
 
 const Home = () => {
@@ -18,6 +19,9 @@ const Home = () => {
                     products.slice(0, 6).map(product => <Product key={product._id}
                         product={product} ></Product>)
                 }
+            </div>
+            <div className='mt-5'>
+                <Map></Map>
             </div>
         </>
     );

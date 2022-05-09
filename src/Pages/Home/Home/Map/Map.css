@@ -1,0 +1,5 @@
+.support{
+    display: flex;
+    gap: 200px;
+    border: 2px solid gray;
+}
