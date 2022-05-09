@@ -15,6 +15,7 @@ import Products from './Pages/Home/Products/Products';
 import AddedItems from './Pages/AddedItems/AddedItems';
 import AddItem from './Pages/AddItem/AddItem';
 import ProductList from './Pages/ProductList/ProductList';
+import EditProduct from './Pages/EditProduct/EditProduct';
 
 function App() {
   return (
@@ -45,6 +46,11 @@ function App() {
         <Route path='/productDetail/:id' element={
           <RequireAuth>
             <ProductDetail></ProductDetail>
+          </RequireAuth>
+        }></Route>
+        <Route path='/editProduct/:id' element={
+          <RequireAuth>
+            <EditProduct></EditProduct>
           </RequireAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>

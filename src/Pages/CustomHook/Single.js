@@ -6,7 +6,7 @@ export const Single = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://cryptic-cliffs-97574.herokuapp.com/products/${id}`)
             .then(res => res.json())
             .then(data => {
                 setProduct(data)

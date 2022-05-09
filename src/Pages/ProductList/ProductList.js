@@ -13,7 +13,6 @@ const ProductList = () => {
                     <tr>
 
                         <th>Name</th>
-                        <th>Descriptions</th>
                         <th>Quantity</th>
                         <th>Image</th>
                         <th>Price</th>
