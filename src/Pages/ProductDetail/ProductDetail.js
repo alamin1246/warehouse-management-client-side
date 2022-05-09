@@ -10,26 +10,7 @@ const ProductDetail = () => {
     const [product, setProduct] = SingleHookProduct(id);
 
 
-    const handelDelivery = () => {
 
-        const newQuantity = product.quantity - 1;
-        const count = { newQuantity }
-
-        fetch(`https://cryptic-cliffs-97574.herokuapp.com/update/${id}`, {
-            method: 'PUT',
-            body: JSON.stringify({
-                count
-            }),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data);
-
-            });
-    }
     return (
         <div className='container text-center'>
             <div>
@@ -47,7 +28,7 @@ const ProductDetail = () => {
                             <p>Supplier:{product.supplier}</p>
                         </Card.Text>
                         <Card.Text>
-                            <p>Price: {product.price} TK</p>
+                            <p>Price: {product.price} $</p>
                         </Card.Text>
 
                     </Card.Body>

@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner';
 import Product from '../Product/Product';
 import Map from './Map/Map';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [products] = CustomHook([]);
@@ -20,6 +21,16 @@ const Home = () => {
                         product={product} ></Product>)
                 }
             </div>
+
+            <div className='mt-5'>
+                <Link
+                    to="/manage-inventory"
+                    className="manageProduct bg-primary"
+                >
+                    Manage Inventory
+                </Link>
+            </div>
+
             <div className='mt-5'>
                 <Map></Map>
             </div>
