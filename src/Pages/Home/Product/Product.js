@@ -16,7 +16,7 @@ const Product = ({ product }) => {
             <p><small>Description: {description}</small></p>
             <p><small>Quantity: {quantity}</small></p>
             <p>Supplier Name: {supplier_name}</p>
-            <button onClick={() => navigateToProductDetail(product._id)} className='btn btn-success text-black'>Details</button>
+            <button onClick={() => navigateToProductDetail(product._id)} className='btn btn-primary text-black'>Details</button>
         </div>
     );
 };

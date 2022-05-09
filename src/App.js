@@ -17,6 +17,7 @@ import AddItem from './Pages/AddItem/AddItem';
 import ProductList from './Pages/ProductList/ProductList';
 import EditProduct from './Pages/EditProduct/EditProduct';
 import Quantity from './Pages/Quantity/Quantity';
+import ViewProduct from './Pages/ViewProduct/ViewProdct';
 
 function App() {
   return (
@@ -57,6 +58,11 @@ function App() {
         <Route path='/quantity/:id' element={
           <RequireAuth>
             <Quantity></Quantity>
+          </RequireAuth>
+        }></Route>
+        <Route path='/view/:id' element={
+          <RequireAuth>
+            <ViewProduct></ViewProduct>
           </RequireAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>

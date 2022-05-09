@@ -53,7 +53,6 @@ const Quantity = () => {
         })
             .then(response => response.json())
             .then(data => {
-                // setProducts(data)
                 toast('Product Delivered Success')
                 console.log(data);
 
