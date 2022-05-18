@@ -54,10 +54,10 @@ const AddNewStockItem = () => {
               <div className="md:flex mb-8">
                 <div className="md:w-1/3">
                   <legend className="uppercase tracking-wide text-sm">
-                    Product Info
+                    Product Details
                   </legend>
                   <p className="text-xs font-light text-red">
-                    All input field is **required**
+                     All Required field
                   </p>
                 </div>
                 <div className="md:flex-1 mt-2 mb:mt-0 md:px-3">
@@ -75,14 +75,14 @@ const AddNewStockItem = () => {
                     />
                     {errors.name && (
                       <span className="text-red-500">
-                        This field is required
+                        Required field
                       </span>
                     )}
                   </div>
                   <div className="md:flex mb-4">
                     <div className="md:flex-1 md:pr-3">
                       <label className="block uppercase tracking-wide text-charcoal-darker text-xs font-bold">
-                        Price
+                       Product Price
                       </label>
                       <input
                         className="w-full shadow-inner p-4 border-0"
@@ -93,13 +93,13 @@ const AddNewStockItem = () => {
                       />
                       {errors.price && (
                         <span className="text-red-500">
-                          This field is required
+                          Required field
                         </span>
                       )}
                     </div>
                     <div className="md:flex-1 md:pl-3">
                       <label className="block uppercase tracking-wide text-charcoal-darker text-xs font-bold">
-                        Stock Quantity
+                        Stock Product Quantity
                       </label>
                       <input
                         className="w-full shadow-inner p-4 border-0"
@@ -110,7 +110,7 @@ const AddNewStockItem = () => {
                       />
                       {errors.quantity && (
                         <span className="text-red-500">
-                          This field is required
+                            All Required field
                         </span>
                       )}
                     </div>
@@ -125,12 +125,12 @@ const AddNewStockItem = () => {
                         className="w-full shadow-inner p-4 border-0"
                         type="url"
                         name="img"
-                        placeholder="https://i.ibb.co/XS2Nz4Y/s2.jpg"
+                        placeholder="Enter the product URL"
                         {...register("img", { required: true })}
                       />
                       {errors.img && (
                         <span className="text-red-500">
-                          This field is required
+                           Required field
                         </span>
                       )}
                     </div>
@@ -143,7 +143,7 @@ const AddNewStockItem = () => {
                     Product Descriptions
                   </legend>
                   <p className="text-xs font-light text-red">
-                    All input field is **required**
+                           All Required field
                   </p>
                 </div>
                 <div className="md:flex-1 mt-2 mb:mt-0 md:px-3">
@@ -170,7 +170,7 @@ const AddNewStockItem = () => {
                     Dealer Info
                   </legend>
                   <p className="text-xs font-light text-red">
-                    All input field is **required**
+                        All Required field
                   </p>
                 </div>
                 <div className="md:flex-1 mt-2 mb:mt-0 md:px-3">
@@ -182,14 +182,14 @@ const AddNewStockItem = () => {
                       className="w-full shadow-inner p-4 border-0"
                       type="text"
                       name="suplierName"
-                      placeholder="Raihan Sarkar"
+                      placeholder="Md. Al Amin Hossain"
                       {...register("suplierName", {
                         required: true,
                       })}
                     />
                     {errors.suplierName && (
                       <span className="text-red-500">
-                        This field is required
+                            All Required field
                       </span>
                     )}
                   </div>
@@ -202,12 +202,12 @@ const AddNewStockItem = () => {
                       className="w-full shadow-inner p-4 border-0"
                       type="email"
                       name="email"
-                      placeholder="perfume.dealer@gmail.com"
+                      placeholder="kidstoys.dealer@gmail.com"
                       {...register("email", { required: true })}
                     />
                     {errors.email && (
                       <span className="text-red-500">
-                        This field is required
+                            Required field
                       </span>
                     )}
                   </div>
@@ -217,7 +217,7 @@ const AddNewStockItem = () => {
               <div className="md:flex mb-6 border border-t-1 border-b-0 border-x-0 border-cream-dark">
                 <div className="md:flex-1 px-3 text-center md:text-right">
                   <button className="button mt-1 bg-blue-500 hover:bg-blue-600 text-white border-2 border-blue-500 hover:border-blue-600 px-3 py-2 rounded uppercase font-poppins font-medium">
-                    Create A Item
+                    Create A Product Item
                   </button>
                 </div>
               </div>

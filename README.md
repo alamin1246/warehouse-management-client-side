@@ -1,7 +1,8 @@
 1. Website Name: Kids Toys Stock management
-2. Website live Link:
+2. Website live Link: https://kids-toys-stock-warehouse.netlify.app/
 3. Description: The purpose of this website is to keep track of inventory goods. Inventory or warehouse management software is what it is.
 4. Features
+
 - Home Page
 - Store Product
 - Update Product
@@ -13,7 +14,9 @@
 - Firebase Login and Register Options
 - Responsive Navbar
 - Protected Router
+
 5. Technology
+
 - React.js
 - React-Router v-6
 - Tailwind Css
