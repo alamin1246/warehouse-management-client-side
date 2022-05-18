@@ -1,8 +1,7 @@
-Website Name: Kids Toys Stock Management
-This website is development for warehouse store management. It is used for business purposes.
-Live Website Link: https://tangerine-figolla-1f58c9.netlify.app/
-Five bullet points mention my website's different features and functionality-
-
+1. Website Name: Kids Toys Stock management
+2. Website live Link:
+3. Description: The purpose of this website is to keep track of inventory goods. Inventory or warehouse management software is what it is.
+4. Features
 - Home Page
 - Store Product
 - Update Product
@@ -10,4 +9,30 @@ Five bullet points mention my website's different features and functionality-
 - Show Product
 - About Page
 - Blogs Page
-- Login, Registration manually and also github, google account
+- real-time mongodb database
+- Firebase Login and Register Options
+- Responsive Navbar
+- Protected Router
+5. Technology
+- React.js
+- React-Router v-6
+- Tailwind Css
+- Firebase for the backend
+- React toastify
+
+- Node.js
+- MongoDB
+
+6. Hosting
+
+- Heroku server side hosting
+- Firebase client side hosting
+
+7. Installation
+
+Install the dependencies and start the server.
+
+```sh
+yarn install
+yarn start
+```

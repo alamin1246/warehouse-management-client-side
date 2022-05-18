@@ -1,81 +1,63 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Header from './Pages/Shared/Header/Header';
-import About from './Pages/About/About';
-import Home from './Pages/Home/Home/Home';
-import Footer from './Pages/Shared/Footer/Footer';
-import ProductDetail from './Pages/ProductDetail/ProductDetail';
-import NotFound from './Pages/Shared/NotFound/NotFound';
-import Login from './Pages/Login/Login/Login';
-import Register from './Pages/Login/Register/Register';
-import Checkout from './Pages/Checkout/CheckOut/Checkout';
-import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
-import Blogs from './Pages/Home/Blogs/Blogs';
-import Products from './Pages/Home/Products/Products';
-import AddedItems from './Pages/AddedItems/AddedItems';
-import AddItem from './Pages/AddItem/AddItem';
-import ProductList from './Pages/ProductList/ProductList';
-import EditProduct from './Pages/EditProduct/EditProduct';
-import Quantity from './Pages/Quantity/Quantity';
-import ViewProduct from './Pages/ViewProduct/ViewProdct';
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import auth from "./Firebase/firebase.init";
+import Login from "./Pages/Authentication/Login/Login";
+import Register from "./Pages/Authentication/Register/Register";
+import RequireAuth from "./Pages/Authentication/RequireAuth/RequireAuth";
+import Home from "./Pages/HomePage/Home/Home";
+import Dashboard from "./Pages/InventoryPage/Dashboard/Dashboard";
+import Inventory from "./Pages/InventoryPage/Inventory/Inventory";
+import Footer from "./Pages/SharedPage/Footer/Footer";
+import Header from "./Pages/SharedPage/Header/Header";
+import Loading from "../src/Pages/SharedPage/Loading/Loading";
+import PageNotFound from "./Pages/PageNotFound/PageNotFound";
+import Blogs from "../src/Pages/Blog/Blog";
 
 function App() {
+  const { pathname } = useLocation();
+  const [user, loading] = useAuthState(auth);
   return (
-    <div>
-      <Header></Header>
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/product/:productId' element={<ProductDetail></ProductDetail>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
-        <Route path='/products' element={<Products></Products>}></Route>
-        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-        <Route path='/add-item' element={
-          <RequireAuth>
-            <AddItem></AddItem>
-          </RequireAuth>
-        }></Route>
-        <Route path='/my-items' element={
-          <RequireAuth>
-            <AddedItems></AddedItems>
-          </RequireAuth>
-        }></Route>
-        <Route path='/manage-inventory' element={
-          <RequireAuth>
-            <ProductList></ProductList>
-          </RequireAuth>
-        }></Route>
-        <Route path='/productDetail/:id' element={
-          <RequireAuth>
-            <ProductDetail></ProductDetail>
-          </RequireAuth>
-        }></Route>
-        <Route path='/editProduct/:id' element={
-          <RequireAuth>
-            <EditProduct></EditProduct>
-          </RequireAuth>
-        }></Route>
-        <Route path='/quantity/:id' element={
-          <RequireAuth>
-            <Quantity></Quantity>
-          </RequireAuth>
-        }></Route>
-        <Route path='/view/:id' element={
-          <RequireAuth>
-            <ViewProduct></ViewProduct>
-          </RequireAuth>
-        }></Route>
-        <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/checkout' element={
-          <RequireAuth>
-            <Checkout></Checkout>
-          </RequireAuth>
-        }></Route>
-        <Route path='*' element={<NotFound></NotFound>}></Route>
-      </Routes>
-      <Footer></Footer>
-    </div>
+    <>
+      <div className="min-h-[80vh] bg-gray-100">
+        {pathname.includes("/dashboard") ? "" : <Header />}
+        {loading ? (
+          <div>
+            <Loading />
+          </div>
+        ) : (
+          <div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/blogs" element={<Blogs />} />
+
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+
+              <Route
+                path="/dashboard/inventory/:id"
+                element={
+                  <RequireAuth>
+                    <Inventory />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path="dashboard/*"
+                element={
+                  <RequireAuth>
+                    <Dashboard />
+                  </RequireAuth>
+                }
+              />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </div>
+        )}
+      </div>
+      <ToastContainer />
+      {pathname.includes("/dashboard") ? "" : <Footer />}
+    </>
   );
 }
 
