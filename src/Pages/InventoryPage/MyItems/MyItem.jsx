@@ -33,7 +33,7 @@ const MyItem = () => {
   const deleteItem = async (id) => {
     const sure = window.confirm("Are you sure? You want to delete!");
     if (sure) {
-      const url = `https://cryptic-cliffs-97574.herokuapp.com/inventory-items/${id}`;
+      const url = `https://cryptic-cliffs-97574.herokuapp.com//inventory-items/${id}`;
       await axios.delete(url).then((response) => {
         const { data } = response;
         if (data) {
@@ -69,7 +69,7 @@ const MyItem = () => {
                 </th>
 
                 <th className="px-6 py-3  text-center font-medium">Availability</th>
-                <th className="px-6 py-3  text-center font-medium">Price</th>
+                <th className="px-6 py-3  text-center font-medium">price</th>
                 <th className="px-6 py-3 text-center font-medium">Update</th>
               </tr>
             </thead>

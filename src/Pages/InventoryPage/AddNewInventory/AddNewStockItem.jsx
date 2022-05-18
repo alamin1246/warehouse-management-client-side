@@ -2,7 +2,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
-const AddNewStoclItem = () => {
+const AddNewStockItem = () => {
   const {
     register,
     handleSubmit,
@@ -44,10 +44,10 @@ const AddNewStoclItem = () => {
     <>
       <div className=" my-5 text-charcoal min-h-screen font-sans leading-normal overflow-x-hidden lg:overflow-auto">
         <div className="flex-1 md:p-0 lg:pt-8 lg:pb-8 lg:px-8 mxau flex flex-col">
-          <section className="bg-slate-100 p-4 shadow">
+          <section className="bg-gray-400 p-4 shadow">
             <div className="md:flex">
               <h2 className="md:w-1/3 uppercase tracking-wide text-sm sm:text-lg mb-6">
-                Create New Item
+                Create A New Item
               </h2>
             </div>
             <form onSubmit={handleSubmit(onFormSubmit)}>
@@ -140,7 +140,7 @@ const AddNewStoclItem = () => {
               <div className="md:flex mb-6">
                 <div className="md:w-1/3">
                   <legend className="uppercase tracking-wide text-sm">
-                    Product Description
+                    Product Descriptions
                   </legend>
                   <p className="text-xs font-light text-red">
                     All input field is **required**
@@ -216,8 +216,8 @@ const AddNewStoclItem = () => {
 
               <div className="md:flex mb-6 border border-t-1 border-b-0 border-x-0 border-cream-dark">
                 <div className="md:flex-1 px-3 text-center md:text-right">
-                  <button className="button mt-1 bg-teal-500 hover:bg-teal-600 text-white border-2 border-teal-500 hover:border-teal-600 px-3 py-2 rounded uppercase font-poppins font-medium">
-                    Create Item
+                  <button className="button mt-1 bg-blue-500 hover:bg-blue-600 text-white border-2 border-blue-500 hover:border-blue-600 px-3 py-2 rounded uppercase font-poppins font-medium">
+                    Create A Item
                   </button>
                 </div>
               </div>
@@ -229,4 +229,4 @@ const AddNewStoclItem = () => {
   );
 };
 
-export default AddNewStoclItem;
+export default AddNewStockItem;

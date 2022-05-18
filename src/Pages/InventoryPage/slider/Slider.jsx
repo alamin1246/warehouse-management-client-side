@@ -12,7 +12,7 @@ const Slider = () => {
   const routes = [
     {
       path: `${id ? `/dashboard/admin/home` : "admin/home"}`,
-      name: "Dashboad",
+      name: "Dashboard",
       icon: <FaHome />,
     },
     {

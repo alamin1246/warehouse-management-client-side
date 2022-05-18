@@ -60,7 +60,7 @@ const Login = () => {
     await signInWithEmailAndPassword(email, password);
   };
 
-  //   reste  password
+  //   reset  password
   const resetPassword = async () => {
     const { email } = userLoginData;
     if (email) {
@@ -74,19 +74,15 @@ const Login = () => {
     <>
       <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
         <div className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
-          <div className="p-4 py-6 text-white bg-blue-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
+          <div className="p-4 py-6 text-white bg-gray-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
             <div className="my-3 text-4xl font-bold tracking-wider text-center">
-              <a href="/">WareHouse</a>
+              <a href="/">KIDS TOYS STOCK MANAGEMENT</a>
             </div>
-            <p className="mt-6 font-normal text-center text-gray-300 md:mt-0">
-              All the features you'll ever need to manage your business Give us
-              a try. There's nothing to install. No training manuals needed. No
-              commitments.
-            </p>
+            
             <p className="flex flex-col items-center justify-center mt-10 text-center">
               <span>Don't have an account?</span>
               <Link to="/register" className="underline">
-                Get Started!
+               Sign Up Now!
               </Link>
             </p>
             <p className="mt-6 text-sm text-center text-gray-300">
@@ -169,7 +165,7 @@ const Login = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none "
+                  className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-gray-500 rounded-md shadow hover:bg-blue-600 focus:outline-none "
                 >
                   Log in
                 </button>

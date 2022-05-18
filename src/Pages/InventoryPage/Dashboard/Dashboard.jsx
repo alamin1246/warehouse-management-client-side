@@ -4,7 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, Route, Routes } from "react-router-dom";
 import auth from "../../../Firebase/firebase.init";
 import PageNotFound from "../../PageNotFound/PageNotFound";
-import AddNewStoclItem from "../AddNewInventory/AddNewStoclItem";
+import AddNewStockItem from "../AddNewInventory/AddNewStockItem";
 import ManageInventory from "../Inventory/ManageInventory/ManageInventory";
 import MyItem from "../MyItems/MyItem";
 import Slider from "../slider/Slider";
@@ -28,10 +28,10 @@ const Dashboard = () => {
         </div>
         <div className="w-[100%] ml-[50px] ">
           <div>
-            <div className=" w-[100%] flex items-center justify-between px-2 md:px-5 shadow-md bg-white py-2 bg-opacity-50">
+            <div className=" w-[100%] flex items-center justify-between px-2 md:px-5 shadow-md bg-blue-500 py-2 bg-opacity-50">
               <div>
-                <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-blue-500 font-semibold ">
-                  Admin Panel
+                <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl bg-white-500 font-semibold ">
+                 Kids Toys Stock Management Admin Panel
                 </h1>
               </div>
               <div className="w-16 h-16 relative">
@@ -98,7 +98,7 @@ const Dashboard = () => {
               <Route path="/admin/home" element={<DashboardHome />} />
               <Route path="/my-item" element={<MyItem />} />
               <Route path="/manage-inventory" element={<ManageInventory />} />
-              <Route path="/add-inventory-item" element={<AddNewStoclItem />} />
+              <Route path="/add-inventory-item" element={<AddNewStockItem />} />
               <Route path="/*" element={<PageNotFound />} />
             </Routes>
           </div>

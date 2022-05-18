@@ -43,7 +43,7 @@ const RequireAuth = ({ children }) => {
                 }
                 if (error) {
                   console.log(error);
-                  toast("maybe try many time or Something went wrong");
+                  toast("More time try so something went wrong");
                 }
               }}
             >

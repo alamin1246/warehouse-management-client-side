@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import "./Inventory.css";
 
 const InventoryItems = () => {
-  const [inventoryItemes, setEnventoryItems] = useState([]);
+  const [inventoryItemes, setInventoryItems] = useState([]);
   useEffect(() => {
     const loadData = async () => {
       try {
         const { data } = await axios.get(
           `https://cryptic-cliffs-97574.herokuapp.com/inventory-items`
         );
-        setEnventoryItems(data);
+        setInventoryItems(data);
       } catch (err) {
         console.error(err);
       }
@@ -22,7 +22,7 @@ const InventoryItems = () => {
     <>
       <div className="pb-20">
         <h1 className="text-center text-gray-600 text-2xl md:text-5xl font-semibold py-10 md:pt-20 ">
-          Inventory Item's
+          Kids Toys Inventory Item's
         </h1>
         {inventoryItemes.length === 0 ? (
           <div className=" w-full my-10 z-50 overflow-hidden  opacity-75 flex flex-col items-center justify-center">
@@ -80,20 +80,9 @@ const InventoryItems = () => {
                 </div>
                 <div className="flex justify-center items-center px-2 pb-2">
                   <div className="w-1/2 p-2">
-                    <button className="block w-full bg-teal-500 hover:bg-teal-600 text-white border-2 border-teal-500 hover:border-teal-600 px-3 py-2 rounded uppercase font-poppins font-medium">
-                      <svg viewBox="0 0 24 24" className="inline w-4 h-4">
-                        <path
-                          fill="currentColor"
-                          d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"
-                        />
-                      </svg>{" "}
-                      Details
-                    </button>
-                  </div>
-                  <div className="w-1/2 p-2">
                     <Link
                       to={`dashboard/inventory/${item._id}`}
-                      className="block text-center cursor-pointerZ bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium"
+                      className="block text-center cursor-pointerZ bg-white hover:bg-gray-100 text-blue-500 border-2 border-blue-500 px-3 py-2 rounded uppercase font-poppins font-medium"
                     >
                       Update
                     </Link>

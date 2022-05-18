@@ -64,19 +64,15 @@ const Login = () => {
     <>
       <div className="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
         <div className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
-          <div className="p-4 py-6 text-white bg-blue-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
+          <div className="p-4 py-6 text-white bg-gray-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
             <div className="my-3 text-4xl font-bold tracking-wider text-center">
-              <a href="/">Warehouse</a>
+              <a href="/">KIDS TOYS STOCK MANAGEMENT</a>
             </div>
-            <p className="mt-6 font-normal text-center text-gray-300 md:mt-0">
-              All the features you'll ever need to manage your business Give us
-              a try. There's nothing to install. No training manuals needed. No
-              commitments.
-            </p>
+           
             <p className="flex flex-col items-center justify-center mt-10 text-center">
               <span>Already have an account?</span>
               <Link to="/login" className="underline">
-                Login Now
+                Login Now please
               </Link>
             </p>
             <p className="mt-6 text-sm text-center text-gray-300">
@@ -100,14 +96,14 @@ const Login = () => {
                   for="email"
                   className="text-sm font-semibold text-gray-500"
                 >
-                  Your name
+                  Your Name
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   value={userLoginData.name}
-                  placeholder="Your name"
+                  placeholder="Enter Your Name"
                   onChange={getUserData}
                   required
                   className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent  "
@@ -118,14 +114,14 @@ const Login = () => {
                   for="email"
                   className="text-sm font-semibold text-gray-500"
                 >
-                  Email address
+                  Your Email Address
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   value={userLoginData.email}
-                  placeholder="email address"
+                  placeholder="Enter Your Email Address"
                   onChange={getUserData}
                   required
                   className="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent  "
@@ -137,7 +133,7 @@ const Login = () => {
                     for="password"
                     className="text-sm font-semibold text-gray-500"
                   >
-                    Password
+                   Your Password
                   </label>
                 </div>
                 <input
@@ -167,9 +163,9 @@ const Login = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none "
+                  className="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-gray-500 rounded-md shadow hover:bg-gray-600 focus:outline-none "
                 >
-                  Sign Up
+                Register Now
                 </button>
               </div>
               <div className="flex flex-col space-y-5">
